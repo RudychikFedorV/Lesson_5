@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;     /*применяется для изменения алгоритма расчёта ширины и высоты элемента. ширина блока складывается из ширины контента (width), значений отступов (margin), полей (padding) и границ (border).*/
+    padding: 0;     /* позволяет задать величину поля сразу для всех сторон элемента или определить поля только для указанных сторон. */
+    margin: 0;   /*позволяет контейнеру обрезать поля своих дочерних элементов там, где они примыкают к краям контейнера.*/
+    border: 0;  /* Толщина рамки задаётся свойством border, при этом если указано border: 0, то рамка не выводится. При других значениях border рисунок всегда имеет приоритет. */
+    }    
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;  /*устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. */
+    }    
+img {
+    max-width: 100%;    /* устанавливает максимальную ширину элемента. */
+    }    
+a {
+    text-decoration: none;  /* устанавливает внешний вид декоративных линий в тексте. */
+    }    
+ul li {
+    list-style: none;   /*позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка.*/
+    }    
+.wrapper {    
+    display: flex;
+    max-width: 1600px;        
+    padding: 95px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(125deg, #FC3F5F 0%, #7D61FF 100.32%);
+    }
+.wrapper__page {
+    min-width: 1410px;
+    /* min-height: 1010px; */
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(43, 34, 21, 0.80) -1.22%, #22282E 101.33%);
+    box-shadow: 0px 0px 250px 0px rgba(0, 0, 0, 0.30);    
+    }
+.header__container {
+    display: flex;
+    justify-content: space-between;  
+    padding: 32px;
+    align-items: center;
+    gap: 32px;      
+    }
+.header__logo, .header__button {
+    width: 175px;
+    }
+.nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    padding: 32px;
+    color: #A0A3A7;
+    font-size: 14px;
+    font-weight: 300;    
+    }
+
+.menu__intem__a {
+    color: #A0A3A7;
+    display: inline-block;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    }
+.header__button {    
+    padding: 16px 24px;
+    align-items: center;
+    gap: 16px;
+    border-radius: 999px;
+    background: linear-gradient(93deg, #E1E1E1 8.37%, #FFF 99.95%);
+    box-shadow: 0px 4px 50px 0px rgba(37, 37, 37, 0.08), 1px 1px 1px 0px rgba(135, 135, 135, 0.32) inset;
+    }
+.page {
+    margin-top: 179px;
+    display: flex;
+    }
+.page__main__section {
+    display: flex;
+    max-width: 598px;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    }
+.main__section__title {
+    color: #F2F4F7;
+    text-align: center;    
+    font-size: 72px;    
+    font-weight: 400;
+    margin-bottom: 32px;
+    }
+.main__section__text {
+    color: #F2F4F7;
+    text-align: center;    
+    font-size: 18px;    
+    font-weight: 300;
+    align-self: stretch;    
+    }
+.page__main__button {
+    margin-top: 80px;
+    display: flex;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    min-width: 239px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 999px;
+    border: 2px solid #FC40F4;
+    color: #FC40F4;
+    }
+.page__menu {
+    margin-top: 64px;
+    padding-bottom: 161px;
+    }
+.page__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;    
+    }
+      
+    
+    
