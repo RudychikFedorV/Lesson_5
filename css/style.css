@@ -16,109 +16,119 @@ a {
     }    
 ul li {
     list-style: none;   /*позволяет одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка.*/
-    }    
-.wrapper {    
-    display: flex;
-    max-width: 1600px;        
-    padding: 95px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(125deg, #FC3F5F 0%, #7D61FF 100.32%);
     }
-.wrapper__page {
-    min-width: 1410px;
-    /* min-height: 1010px; */
-    flex-shrink: 0;
+.wrapper {
+    padding: 95px;
+    max-width: 1600px;
+    min-height: 100%;
+    background: linear-gradient(125deg, #FC3F5F 0%, #7D61FF 100.32%);
+}
+.container {
     border-radius: 32px;
     background: linear-gradient(180deg, rgba(43, 34, 21, 0.80) -1.22%, #22282E 101.33%);
-    box-shadow: 0px 0px 250px 0px rgba(0, 0, 0, 0.30);    
-    }
-.header__container {
-    display: flex;
-    justify-content: space-between;  
-    padding: 32px;
-    align-items: center;
-    gap: 32px;      
-    }
-.header__logo, .header__button {
-    width: 175px;
-    }
-.nav__menu {
+    box-shadow: 0px 0px 250px 0px rgba(0, 0, 0, 0.30);
+    max-width: 1410px;
+    padding-bottom: 50px;
+}
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 64px;
     padding: 32px;
-    color: #A0A3A7;
-    font-size: 14px;
-    font-weight: 300;    
-    }
-
-.menu__intem__a {
-    color: #A0A3A7;
-    display: inline-block;
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-    }
-.header__button {    
-    padding: 16px 24px;
+}    
+.nav__logo,
+nav__btn {
+ min-width: 175px;
+ width: 100%;   
+}
+.nav__ul {
+    display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 64px;
+}
+.nav__a {
+    color: #A0A3A7;
+    transition: 0.2s all ease-in-out;
+    transform: scale(1);
+}
+.nav__a:hover {
+    display: inline-block;
+    transform: scale(1.1);
+}
+.main {
+    margin-top: 129px;
+    color: #f2f4f7;
+    text-align: center;
+}
+.main__title {
+    font-size: 72px;
+    font-weight: 400;
+    min-width: 490px;
+    margin-inline: auto;
+    margin-bottom: 32px;
+    transition: 0.5s all ease-in-out;
+}
+.main__title:hover {
+    color: orange;
+}
+.main__desc {
+    font-size: 18px;
+    font-weight: 300;
+    max-width: 490px;
+    margin-inline: auto;
+    margin-bottom: 80px;
+}
+.main__btn {
+    display: inline-block;
+    bottom: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 999px;
+    border: 2px solid #fc40fc;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fc40fc;
+    transition: 0.5s all ease-in-out;
+    min-width: 239px;
+    margin-bottom: 64px;
+    text-align: center;
+}
+.main__btn:hover {
+    transform: translateY(-10px);
+    border-color: orange;
+    color: orange;
+}
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.btn {
+    display: inline-block;
+    bottom: 0;
+    outline: 0;
+    cursor: pointer;
     border-radius: 999px;
     background: linear-gradient(93deg, #E1E1E1 8.37%, #FFF 99.95%);
     box-shadow: 0px 4px 50px 0px rgba(37, 37, 37, 0.08), 1px 1px 1px 0px rgba(135, 135, 135, 0.32) inset;
-    }
-.page {
-    margin-top: 179px;
-    display: flex;
-    }
-.page__main__section {
-    display: flex;
-    max-width: 598px;
-    flex-direction: column;
-    align-items: center;
-    margin-inline: auto;
-    }
-.main__section__title {
-    color: #F2F4F7;
-    text-align: center;    
-    font-size: 72px;    
-    font-weight: 400;
-    margin-bottom: 32px;
-    }
-.main__section__text {
-    color: #F2F4F7;
-    text-align: center;    
-    font-size: 18px;    
-    font-weight: 300;
-    align-self: stretch;    
-    }
-.page__main__button {
-    margin-top: 80px;
-    display: flex;
-    cursor: pointer;
-    outline: 0;
-    border: 0;
-    min-width: 239px;
-    padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 999px;
-    border: 2px solid #FC40F4;
-    color: #FC40F4;
-    }
-.page__menu {
-    margin-top: 64px;
-    padding-bottom: 161px;
-    }
-.page__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;    
-    }
-      
-    
-    
+    color: #24282e;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 24px;
+}
+.icon-menu {
+    color: #FFF;
+    font-size: 40px;
+    display: none;
+}
+.nav__btn .material-icons {
+    display: none;
+}
+.menu-burger {
+    display: none;
+}
+#menuChekbox {
+    display: none;
+}

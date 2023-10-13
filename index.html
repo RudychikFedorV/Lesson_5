@@ -4,57 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson_5</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">    
-    <link rel="stylesheet" href="./js/script.js">
+    <link rel="stylesheet" href="./css/stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/media.css">        
+    <title>Media_Project</title>
  </head>
 <body>
     <div class="wrapper">
-        <div class="wrapper__page">
-            <div class="header">
-                <div class="header__container">
-                    <div class="header__logo">
-                        <img src="./img/logo.svg" alt="logo">
-                    </div>
-                    <nav class="nav">
-                        <ul class="nav__menu">
-                            <li class="menu__intem__li"> <a class="menu__intem__a" href="/">Features</a></li>
-                            <li class="menu__intem__li"> <a class="menu__intem__a" href="/">Partners</a></li>
-                            <li class="menu__intem__li"> <a class="menu__intem__a" href="/">Stories</a></li>
-                        </ul>
-                    </nav>
-                    <button class="header__button" type="button"><a class="btn" href="/">Download for free</a></button>
+        <div class="container"> 
+            <nav class="nav">
+                <div nav__logo> <a href="/"><img src="./img/logo.svg" alt="Apple"></a></div>
+                <input id="menuChekbox" type="checkbox">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__a" href="/">Features</a></li>
+                    <li class="nav__li"><a class="nav__a" href="/">Partners</a></li>
+                    <li class="nav__li"><a class="nav__a" href="/">Stories</a></li>
+                </ul>
+                <div class="nav__btn">
+                    <a class="btn" href="/">
+                        <span class="btn__text">Download for free</span>
+                        <span class="material-icons">D</span>
+                    </a>
                 </div>
-            </div>        
-            <main class="page">
-                <section class="page__main__section">
-                    <h1 class="main__section__title">The Power of Simplicity</h1>
-                    <p class="main__section__text">Instead of spending time searching for the right app, our AI will bring the right app to you.</p>
-                    <a href="/" class="page__main__button">Learn</a>
-                    <nav class="page__menu">
-                        <ul class="page__list">
-                            <li class="page__menu__intem">
-                                <img src="./img/circle.svg" alt="Circle">
-                            </li>
-                            <li class="page__menu__intem">
-                                <img src="./img/circle.svg" alt="Circle">
-                            </li>
-                            <li class="page__menu__intem">
-                                <img src="./img/circle-active.svg" alt="Circle-active">
-                            </li>
-                            <li class="page__menu__intem">
-                                <img src="./img/circle.svg" alt="Circle">
-                            </li>
-                            <li class="page__menu__intem">
-                                <img src="./img/circle.svg" alt="Circle">
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-            </main>    
-        </div>    
-    </div>   
+                <label for="menuChekbox" class="menu-burger">
+                    <span class="material-icons icon-menu">menu</span>
+                </label>
+            </nav>
+            <main class="main">
+                <h1 class="main__title">The Power of Simplicity</h1>
+                <p class="main__desc">Instead of spending time searching for the right app, our AI will bring the right app to you.</p>
+                <a href="/" class="main__btn">Learn</a>
+                <div class="loading">                    
+                    <img src="./img/circle.svg" alt="Circle">
+                    <img src="./img/circle.svg" alt="Circle">                    
+                    <img src="./img/circle-active.svg" alt="Circle-active">                    
+                    <img src="./img/circle.svg" alt="Circle">                    
+                    <img src="./img/circle.svg" alt="Circle">                    
+                </div>
+            </main>
+        </div>
+    </div>       
 </body>
 </html>
